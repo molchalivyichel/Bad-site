@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel = "stylesheet" href = "css/main_style.css" />
+</head>
+
+<body>
+
+<video autoplay muted loop id="myVideo">
+    <source src="material/back.mp4" type="video/mp4">
+</video>
+
+<div class = "container">
+    <div class = "basic_logo item1 basic_padding">
+        <h1><a href = "index.html" class = "a_text_white_search">АВТОВОКЗАЛ</a></h1>
+        <h1><a href = "index.html" class = "a_text_white_search">ТАМБОВ</a></h1>
+    </div>
+    <div class="basic_padding">
+        <button type="button" class = "btn48 item2 "><a href = "site_str/services.html" class = "a_text_black">УСЛУГИ</a></button>
+    </div>
+    <div class="basic_padding">
+        <button type="button" class = "btn32 item2 "><a href = "site_str/schedule.html" class = "a_text_black">РАСПИСАНИЕ АВТОБУСОВ</a></button>
+    </div>
+    <div class="basic_padding">
+        <button type="button" class = "btn48 item2 "><a href = "site_str/news.html" class = "a_text_black">НОВОСТИ</a></button>
+    </div>
+    <div class="basic_padding">
+        <button type="button" class = "btn48 item2 "><a href = "site_str/contact.html" class = "a_text_black">КОНТАКТЫ</a></button>
+    </div>
+</div>
+
+<div class = "container">
+    <div class = "item4_empty">
+        <p id = "text_black">ОФИЦИАЛЬНЫЙ САЙТ АВТОВОКЗАЛА</p>
+        <p id = "text_black" >КУПИТЬ БИЛЕТ НА АВТОБУС</p>
+        <div class = "center">
+            <p id = "text_black" >РАСПИСАНИЕ АВТОБУСОВ</p>
+        </div>
+
+        <div>
+            <input type="search" class = "search_str" placeholder="ОТКУДА"></input>
+            <input type="search" class = "search_str" placeholder="КУДА"></input>
+            <input type="date" class = "search_str search_date" placeholder="ДАТА ПОЕЗДКИ"></input>
+            <button type="button" class = "btn40 item5 a_text_white"><a href = "" class = "a_text_white_search">НАЙТИ БИЛЕТЫ</a></button>
+        </div>
+
+        <div class = "container item6">
+            <div class = "basic_padding">
+                <p id = "text_clock" >ТЕКУЩЕЕ ВРЕМЯ</p>
+            </div>
+            <div class="basic_padding" id = "button_clock">
+                <button type="button" class = "btn32_black item2 "><a href = "site_str/about_avtovokzal.html" class = "a_text_white">ОБ АВТОВОКЗАЛЕ</a></button>
+            </div>
+        </div>
+
+        <div id="clock" class=""></div>
+
+            <script>
+                function updateClock() {
+                    var currentTime = new Date();
+                    var currentHours = currentTime.getHours();
+                    var currentMinutes = currentTime.getMinutes();
+                    var currentSeconds = currentTime.getSeconds();
+
+                    currentHours = (currentHours < 10 ? "0" : "") + currentHours;
+                    currentMinutes = (currentMinutes < 10 ? "0" : "") + currentMinutes;
+                    currentSeconds = (currentSeconds < 10 ? "0" : "") + currentSeconds;
+
+                    var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds;
+                    document.getElementById("clock").innerHTML = currentTimeString;
+                }
+
+            setInterval(updateClock, 1000); // Обновляем время каждую секунду
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

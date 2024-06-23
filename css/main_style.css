@@ -1,0 +1,247 @@
+/* button */
+
+.btn48 {
+    font-family: "JetBrains Mono";
+    font-weight:1000;
+    font-size:48px;
+
+    border-radius: 25px;
+    transition: .2s linear;
+    background: #ffffff;
+    border: 0;
+}
+.btn48:hover {
+    box-shadow: 0 0 0 4px #8162FF;
+}
+
+.btn32 {
+    font-family: "JetBrains Mono";
+    font-weight:1000;
+    font-size:32px;
+
+    border-radius: 25px;
+    transition: .2s linear;
+    background: #ffffff;
+    border: 0;
+}
+.btn32:hover {
+    box-shadow: 0 0 0 4px #8162FF;
+}
+
+.btn40 {
+    font-family: "JetBrains Mono";
+    font-weight:1000;
+    font-size:40px;
+
+    border-radius: 25px;
+    transition: .2s linear;
+    background: #8162ff;
+    border: 0;
+}
+.btn40:hover {
+    box-shadow: 0 0 0 4px #2c00c6;
+}
+
+.btn32_black {
+    font-family: "JetBrains Mono";
+    font-weight:1000;
+    font-size:32px;
+
+    border-radius: 25px;
+    transition: .2s linear;
+    background: #000000;
+    border: 0;
+}
+.btn32_black:hover {
+    box-shadow: 0 0 0 4px #8162FF;
+}
+
+/* ссылка в кнопке */
+a {
+    text-decoration: none;
+}
+a:hover {
+    /* Цвет при наведении */
+    color: #8162FF;
+}
+
+a:active {
+    /* Цвет ссылки при клике */
+    color: #BBAAFF;
+}
+
+/* video-background */
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+/* остальное */
+
+body {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-top: 35px;
+    background: black;
+}
+
+.basic_logo {
+    color: #ffffff;
+    line-height: 40px;
+    font-family: "JetBrains Mono";
+    font-weight:1000;
+    font-size:32px;
+}
+.container {
+    max-width: 1980px;
+    display: flex;
+    justify-content: flex-start; /* Это свойство выравнивает блоки к концу контейнера (вправо) */
+}
+
+.item1 {
+    width: 650px;
+}
+.item2 {
+    width: 275px;
+    height: 125px;
+}
+
+.item3 {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.item4_empty {
+    flex: 0 0 1780px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.item5 {
+    width: 350px;
+    height: 114px;
+    margin-left: 40px;
+}
+
+.item6 {
+    align-items: center;
+    width: 1780px;
+    height: 200px;
+}
+
+.item7 {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 2px;
+}
+
+
+#search_date {
+    max-width: 100%;
+}
+
+.search_str {
+    border: none;
+    padding: 36px;
+    font-size: 30px;
+    font-family: "JetBrains Mono";
+    color: #ffffff;
+    background-color: #000000;
+    font-weight:1000;
+    transition: all 0.3s ease-in-out;
+    border-radius: 25px;
+}
+
+.input::placeholder {
+    color: #421ed5;
+}
+
+.input:focus {
+    box-shadow: 0 0 10px rgb(83, 60, 175);
+    border-color: #8162ff;
+}
+
+.input:focus::placeholder {
+    color: #8162ff;
+}
+
+.basic_padding{
+    margin-right: 25px;
+}
+
+#text_black{
+    font-family: "JetBrains Mono";
+    font-weight:1000;
+    color:black;
+    font-size: 48px;
+    line-height: 15px;
+}
+
+#text_oficial {
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+#clock {
+    font-size: 96px;
+    font-weight:1000;
+    margin-top: 50px;
+
+    font-family: "JetBrains Mono";
+    color:black;
+    line-height: 15px;
+    padding-bottom: 35px;
+}
+
+#text_clock{
+    font-family: "JetBrains Mono";
+    font-weight:1000;
+    color:black;
+    font-size: 90px;
+}
+
+#button_clock{
+    padding-left: 710px;
+    padding-top: 250px;
+}
+
+.center {
+    text-align: center;
+}
+
+.a_text_black {
+    color: black;
+}
+
+.a_text_white {
+    color: white;
+}
+
+.a_text_white_search {
+    color: white;
+}
+
+.a_text_white_search:hover {
+    /* Цвет при наведении */
+    color: #e6b5ff;
+}
+
+.start_txt{
+    font-family: "JetBrains Mono";
+    font-weight:1000;
+    color:black;
+    font-size: 36px;
+}
+
+#date {
+    font-family: "JetBrains Mono";
+    color:#666666;
+    font-size: 32px;
+    padding-right: 25px;
+}

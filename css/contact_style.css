@@ -1,0 +1,33 @@
+body{
+    background-color: #0D0D0D;
+}
+
+.contack_block {
+    flex: 0 0 500px;
+    background-color: #fff;
+    margin-right: 50px;
+    border-radius: 25px;
+}
+
+.text_black{
+    font-family: "JetBrains Mono";
+    color:black;
+    font-size: 40px;
+    line-height: 50px;
+    padding-right: 25px;
+}
+
+.text_black_p{
+    font-family: "JetBrains Mono";
+    color:black;
+    font-size: 32px;
+    line-height: 50px;
+    padding-right: 25px;
+}
+
+.text_black_p_name{
+    font-family: "JetBrains Mono";
+    color:#666666;
+    font-size: 32px;
+    padding-right: 25px;
+}
